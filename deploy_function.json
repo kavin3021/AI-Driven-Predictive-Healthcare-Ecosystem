@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "functionAppName": {
+        "type": "string",
+        "defaultValue": "HealthFunction21",
+        "metadata": {
+          "description": "The name of the existing Function App"
+        }
+      },
+      "location": {
+        "type": "string",
+        "defaultValue": "East US",
+        "metadata": {
+          "description": "The Azure region for resources"
+        }
+      },
+      "iotHubName": {
+        "type": "string",
+        "defaultValue": "ExpertIoTHub",
+        "metadata": {
+          "description": "The name of the IoT Hub"
+        }
+      },
+      "functionName": {
+        "type": "string",
+        "defaultValue": "IoTHubToTwins",
+        "metadata": {
+          "description": "The name of the function"
+        }
+      }
+    },
+    "resources": [
+      {
+        "type": "Microsoft.Web/sites/functions",
+        "apiVersion": "2022-03-01",
+        "name": "[concat(parameters('functionAppName'), '/', parameters('functionName'))]",
+        "location": "[parameters('location')]",
+        "dependsOn": [
+          "[resourceId('Microsoft.Web/sites', parameters('functionAppName'))]"
+        ],
+        "properties": {
+          "config": {
+            "bindings": [
+              {
+                "name": "event",
+                "type": "eventHubTrigger",
+                "direction": "in",
+                "eventHubName": "events",
+                "connection": "expertIoTHub.events.IOTHUB",
+                "cardinality": "one"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "outputs": {}
+  }

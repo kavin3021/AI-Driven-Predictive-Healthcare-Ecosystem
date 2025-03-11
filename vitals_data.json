@@ -1,0 +1,72 @@
+[
+    {
+        "patient_id": "P001",
+        "heart_rate": 114,
+        "oxygen": 93.78,
+        "status": "High",
+        "timestamp": "2025-03-05 12:00:00"
+    },
+    {
+        "patient_id": "P001",
+        "heart_rate": 108,
+        "oxygen": 97.24,
+        "status": "High",
+        "timestamp": "2025-03-05 12:00:02"
+    },
+    {
+        "patient_id": "P001",
+        "heart_rate": 85,
+        "oxygen": 95.30,
+        "status": "Normal",
+        "timestamp": "2025-03-05 12:00:04"
+    },
+    {
+        "patient_id": "P001",
+        "heart_rate": 125,
+        "oxygen": 93.36,
+        "status": "High",
+        "timestamp": "2025-03-05 12:00:06"
+    },
+    {
+        "patient_id": "P001",
+        "heart_rate": 50,
+        "oxygen": 91.22,
+        "status": "Normal",
+        "timestamp": "2025-03-05 12:00:08"
+    },
+    {
+        "patient_id": "P001",
+        "heart_rate": 103,
+        "oxygen": 85.04,
+        "status": "High",
+        "timestamp": "2025-03-05 12:00:10"
+    },
+    {
+        "patient_id": "P001",
+        "heart_rate": 136,
+        "oxygen": 97.48,
+        "status": "High",
+        "timestamp": "2025-03-05 12:00:12"
+    },
+    {
+        "patient_id": "P001",
+        "heart_rate": 61,
+        "oxygen": 85.00,
+        "status": "Normal",
+        "timestamp": "2025-03-05 12:00:14"
+    },
+    {
+        "patient_id": "P001",
+        "heart_rate": 98,
+        "oxygen": 89.82,
+        "status": "Normal",
+        "timestamp": "2025-03-05 12:00:16"
+    },
+    {
+        "patient_id": "P001",
+        "heart_rate": 118,
+        "oxygen": 88.37,
+        "status": "High",
+        "timestamp": "2025-03-05 12:00:18"
+    }
+]

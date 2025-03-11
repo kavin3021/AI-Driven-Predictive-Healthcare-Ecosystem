@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vitals-ingestion
+  namespace: default  # This is fine, but not strictly necessary as 'default' is the default namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vitals-ingestion
+  template:
+    metadata:
+      labels:
+        app: vitals-ingestion
+    spec:
+      containers:
+      - name: vitals-ingestion
+        image: expertcontainerregistrykavin.azurecr.io/vitals-ingestion:latest  # Corrected image name
+        env:
+        - name: IOT_HUB_CONNECTION_STRING
+          value: "HostName=ExpertIoTHub.azure-devices.net;DeviceId=SimDevice1;SharedAccessKey=yfDXQ98eD5hqHxBuYE5XaWuPQfwnKE95QhidAers08g="
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vitals-ingestion-service
+spec:
+  selector:
+    app: vitals-ingestion  # Corrected:  No 'matchLabels' here, just key-value pairs
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80  # Assuming your container listens on port 80.  Change if necessary.
+  type: LoadBalancer

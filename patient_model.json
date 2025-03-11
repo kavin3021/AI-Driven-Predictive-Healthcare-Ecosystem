@@ -1,0 +1,23 @@
+{
+    "@id": "dtmi:health:patient;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Patient",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "heart_rate",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "oxygen",
+            "schema": "double"
+        },
+        {
+            "@type": "Property",
+            "name": "status",
+            "schema": "string"
+        }
+    ]
+}

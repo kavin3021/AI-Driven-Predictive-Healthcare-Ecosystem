@@ -1,0 +1,6 @@
+patient_id,heart_rate,oxygen,status,timestamp,prediction
+P001,114,93.78,High,2025-03-05 12:00:00,High
+P001,108,97.24,High,2025-03-05 12:00:02,High
+P001,85,95.30,Normal,2025-03-05 12:00:04,Normal
+P001,125,93.36,High,2025-03-05 12:00:06,High
+P001,50,91.22,Normal,2025-03-05 12:00:08,Normal

@@ -1,0 +1,11 @@
+TimeGenerated,Name,PodStatus
+2025-03-05T12:15:00Z,vitals-ingestion-xzy-123,Running
+2025-03-05T12:14:58Z,vitals-ingestion-qrp-456,Running
+2025-03-05T12:14:56Z,vitals-ingestion-mkf-789,Running
+2025-03-05T12:14:54Z,vitals-ingestion-jnh-012,Failed
+2025-03-05T12:14:52Z,vitals-ingestion-lpv-345,Running
+2025-03-05T12:14:50Z,vitals-ingestion-gbt-678,Terminating
+2025-03-05T12:14:48Z,vitals-ingestion-hcu-901,Running
+2025-03-05T12:14:46Z,vitals-ingestion-wqd-234,Pending
+2025-03-05T12:14:44Z,vitals-ingestion-kio-567,Running
+2025-03-05T12:14:42Z,vitals-ingestion-erp-890,Running

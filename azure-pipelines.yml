@@ -1,0 +1,51 @@
+trigger:
+  - main
+
+pool:
+  name: 'Default'  # Use self-hosted agent pool
+  demands:
+    - agent.os -equals Windows_NT  # Specify Windows
+    - docker  # Ensure Docker is installed
+    - kubectl  # Ensure kubectl is installed
+
+steps:
+  - task: Docker@2
+    displayName: 'Build Docker image'
+    inputs:
+      containerRegistry: 'ExpertContainerRegistryDocker'
+      repository: 'vitals-ingestion'
+      command: 'build'
+      Dockerfile: '**/Dockerfile'
+      tags: 'latest'
+
+  - task: Docker@2
+    displayName: 'Push Docker image'
+    inputs:
+      containerRegistry: 'ExpertContainerRegistryDocker'
+      repository: 'vitals-ingestion'
+      command: 'push'
+      tags: 'latest'
+
+  - task: Kubernetes@1
+    displayName: 'Deploy to AKS'
+    inputs:
+      connectionType: 'Azure Resource Manager'
+      azureSubscriptionEndpoint: 'ExpertAzureRM'  # Updated to use service connection
+      azureResourceGroup: 'AI-Driven-Predictive-Healthcare-Ecosystem'
+      kubernetesCluster: 'ExpertAKS'
+      namespace: 'default'
+      command: 'apply'
+      useConfigurationFile: true
+      configuration: 'vitals-deployment.yaml'
+
+  - task: Kubernetes@1
+    displayName: 'Scale deployment on demand'
+    inputs:
+      connectionType: 'Azure Resource Manager'
+      azureSubscriptionEndpoint: 'ExpertAzureRM'  # Updated to use service connection
+      azureResourceGroup: 'AI-Driven-Predictive-Healthcare-Ecosystem'
+      kubernetesCluster: 'ExpertAKS'
+      namespace: 'default'
+      command: 'scale'
+      arguments: 'deployment vitals-ingestion --replicas=3'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
