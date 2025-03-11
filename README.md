@@ -1,7 +1,7 @@
 # AI-Driven Predictive Healthcare Ecosystem 🩺
 
 ## Overview
-Welcome to the **AI-Driven Predictive Healthcare Ecosystem**, a cutting-edge cloud-native solution built on Microsoft Azure to revolutionize real-time patient monitoring and predictive analytics in healthcare. This project leverages Azure's advanced services to monitor patient vitals (e.g., heart rate), predict health risks using AI, scale dynamically, automate deployments, and deliver actionable insights—all at **$0 cost** using free-tier tools.
+Welcome to the **AI-Driven Predictive Healthcare Ecosystem**, a cutting-edge cloud-native solution built on Microsoft Azure ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)to revolutionize real-time patient monitoring and predictive analytics in healthcare. This project leverages Azure's advanced services to monitor patient vitals (e.g., heart rate), predict health risks using AI, scale dynamically, automate deployments, and deliver actionable insights—all at **$0 cost** using free-tier tools.
 
 🎥 **Watch the Demo Video**: [Click here to see the project in action!](AI-Driven-Predictive-healthcare-DEMO.mp4)
 
