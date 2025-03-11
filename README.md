@@ -1,7 +1,7 @@
 # AI-Driven Predictive Healthcare Ecosystem 🩺
 
 ## Overview
-Welcome to the **AI-Driven Predictive Healthcare Ecosystem**, a cutting-edge cloud-native solution built on Microsoft Azure ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)to revolutionize real-time patient monitoring and predictive analytics in healthcare. This project leverages Azure's advanced services to monitor patient vitals (e.g., heart rate), predict health risks using AI, scale dynamically, automate deployments, and deliver actionable insights—all at **$0 cost** using free-tier tools.
+Welcome to the **AI-Driven Predictive Healthcare Ecosystem**, a cutting-edge cloud-native solution built on Microsoft ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)to revolutionize real-time patient monitoring and predictive analytics in healthcare. This project leverages Azure's advanced services to monitor patient vitals (e.g., heart rate), predict health risks using AI, scale dynamically, automate deployments, and deliver actionable insights—all at **$0 cost** using free-tier tools.
 
 🎥 **Watch the Demo Video**: [Click here to see the project in action!](AI-Driven-Predictive-healthcare-DEMO.mp4)
 
@@ -34,7 +34,7 @@ This project integrates **23 Azure resources** into a modular, cloud-native arch
 ## Implementation Steps
 The project was built in 10 meticulous steps, each showcasing a critical aspect of cloud, AI, and DevOps engineering:
 
-1. **Environment Setup**: Configured Python, Docker, Azure CLI, and Git on Windows.
+1. **Environment Setup**: Configured ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white), ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white), Azure CLI, and Git on Windows.
    ![Step 1: Local Setup](Screenshot1_LocalSetup.png)
 
 2. **Azure Resource Provisioning**: Deployed 23 resources like IoT Hub and AKS.
