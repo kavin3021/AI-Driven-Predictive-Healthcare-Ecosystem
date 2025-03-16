@@ -1,9 +1,7 @@
-# AI-Driven Predictive Healthcare Ecosystem 🩺
+# AI-Driven Predictive Healthcare Ecosystem with Hybrid Cloud & Compliance 🩺
 
 ## Overview
 Welcome to the **AI-Driven Predictive Healthcare Ecosystem**, a cutting-edge cloud-native solution built on Microsoft ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)to revolutionize real-time patient monitoring and predictive analytics in healthcare. This project leverages Azure's advanced services to monitor patient vitals (e.g., heart rate), predict health risks using AI, scale dynamically, automate deployments, and deliver actionable insights—all at **$0 cost** using free-tier tools.
-
-🎥 **Watch the Demo Video**: [Click here to see the project in action!](AI-Driven-Predictive-healthcare-DEMO.mp4)
 
 ---
 
@@ -86,7 +84,6 @@ The project was built in 10 meticulous steps, each showcasing a critical aspect 
 ---
 
 ## Deliverables
-- **Demo Video**: [Watch the full demo here](Healthcare-Ecosystem-DEMO.mp4).
 - **Documentation**: [Download the detailed report](Healthcare-Ecosystem-Documentation.pdf).
 - **Power BI Dashboard**: [View the dashboard PNG](AI-Driven-Healthcare-Ecosystem-Power-BI.png) | [Download PBIX](AI-Driven-Healthcare-Ecosystem-Power-BI.pbix).
 - **Source Code**: Available in this repository (`simulate_vitals.py`, `vitals-deployment.yaml`, etc.).
