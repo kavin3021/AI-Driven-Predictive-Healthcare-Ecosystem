@@ -74,6 +74,12 @@ The project was built in 10 meticulous steps, each showcasing a critical aspect 
 
 ---
 
+## Architecture Diagram
+
+![Architecture Diagram](Architecture_diagram.png)
+
+---
+
 ## Business Impact
 - **Patient Safety**: Reduces intervention time by 50% with real-time alerts.
 - **Efficiency**: Saves doctors hours by automating monitoring and scaling.
