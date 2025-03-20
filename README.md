@@ -29,38 +29,49 @@ This project integrates **23 Azure resources** into a modular, cloud-native arch
 
 ---
 
+
+## Architecture Diagram
+
+![Architecture Diagram](Architecture_diagram.png)
+
+---
+
+
 ## Implementation Steps
 The project was built in 10 meticulous steps, each showcasing a critical aspect of cloud, AI, and DevOps engineering:
 
 1. **Environment Setup**: Configured ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white), ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white), Azure CLI, and Git on Windows.
-   ![Step 1: Local Setup](Screenshot1_LocalSetup.png)
+   ![Step 1: Local Setup](Screenshot1_LocalSetup.jpg) 
 
 2. **Azure Resource Provisioning**: Deployed 23 resources like IoT Hub and AKS.
-   ![Step 2: Resource Group](Screenshot2_ResourceGroup.png)
+   ![Step 2: Resource Group](Screenshot2_ResourceGroup1a.jpg)
+   ![](Screenshot2_ResourceGroup1b.jpg)
+   ![](Screenshot2_ResourceGroup1c.jpg)
+   ![](Screenshot2_ResourceGroup1d.jpg)
 
-3. **IoT Data Simulation**: Sent 50 heart rate messages to IoT Hub.
+4. **IoT Data Simulation**: Sent 50 heart rate messages to IoT Hub.
    ![Step 3: IoT Hub Metrics](Screenshot3_IoTHubMetrics.png)
 
-4. **Containerization**: Packaged code into a Docker container for AKS.
+5. **Containerization**: Packaged code into a Docker container for AKS.
    ![Step 4: Docker Image](Screenshot4_DockerImage.png)
 
-5. **Hybrid Cloud**: Connected an on-premises VM using Azure Arc.
-   ![Step 5: Azure Arc](Screenshot5_AzureArc.png)
+6. **Hybrid Cloud**: Connected an on-premises VM using Azure Arc.
+   ![Step 5: Azure Arc](Screenshot5_AzureArc.jpg)
 
-6. **Machine Learning**: Deployed an AI model to predict health risks.
-   ![Step 6: ML Endpoint](Screenshot6_MLEndpoint.png)
+7. **Machine Learning**: Deployed an AI model to predict health risks.
+   ![Step 6: ML Endpoint](Screenshot6_MLEndpoint.jpg)
 
-7. **AKS Deployment**: Scaled to 3 pods for high availability.
-   ![Step 7: AKS Pods](Screenshot7_AKSPods.png)
+8. **AKS Deployment**: Scaled to 3 pods for high availability.
+   ![Step 7: AKS Pods](Screenshot7_AKSPods.jpg)
 
-8. **Monitoring**: Ensured 80% uptime with Azure Monitor.
-   ![Step 8: Monitoring Logs](Screenshot8_MonitoringLogs.png)
+9. **Monitoring**: Ensured 80% uptime with Azure Monitor.
+   ![Step 8: Monitoring Logs](Screenshot8_MonitoringLogs.jpg)
 
-9. **CI/CD Automation**: Automated deployment with Azure DevOps in ~5 minutes.
-   ![Step 9: Pipeline Run](Screenshot9_PipelineRun.png)
+10. **CI/CD Automation**: Automated deployment with Azure DevOps in ~5 minutes.
+   ![Step 9: Pipeline Run](Screenshot9_PipelineRun.jpg)
 
-10. **Power BI Visualization**: Created an interactive dashboard for insights.
-    ![Step 10: Power BI Dashboard](Screenshot10_PowerBIDashboard.png)
+11. **Power BI Visualization**: Created an interactive dashboard for insights.
+    ![Step 10: Power BI Dashboard](Screenshot10_PowerBIDashboard.jpg)
 
 ---
 
@@ -74,11 +85,6 @@ The project was built in 10 meticulous steps, each showcasing a critical aspect 
 
 ---
 
-## Architecture Diagram
-
-![Architecture Diagram](Architecture_diagram.png)
-
----
 
 ## Business Impact
 - **Patient Safety**: Reduces intervention time by 50% with real-time alerts.
