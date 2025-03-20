@@ -97,7 +97,7 @@ The project was built in 10 meticulous steps, each showcasing a critical aspect 
 
 ## Deliverables
 - **Documentation**: [Download the detailed report](Healthcare-Ecosystem-Documentation.pdf).
-- **Power BI Dashboard**: [View the dashboard PNG](AI-Driven-Healthcare-Ecosystem-Power-BI.png) | [Download PBIX](AI-Driven-Healthcare-Ecosystem-Power-BI.pbit).
+- **Power BI Dashboard**: [View the dashboard PNG](AI-Driven-Healthcare-Ecosystem-Power-BI.jpg) | [Download PBIX](AI-Driven-Healthcare-Ecosystem-Power-BI.pbit).
 - **Source Code**: Available in this repository (`simulate_vitals.py`, `vitals-deployment.yaml`, etc.).
 
 ---
