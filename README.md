@@ -96,7 +96,7 @@ The project was built in 10 meticulous steps, each showcasing a critical aspect 
 ---
 
 ## Deliverables
-- **Documentation**: [Download the detailed report](Healthcare-Ecosystem-Documentation.pdf).
+- **Documentation**: [Download the detailed report](DOC-AI-Driven-Predictive-Healthcare-Ecosystem-with-Hybrid-Cloud&Compliance.pdf).
 - **Power BI Dashboard**: [View the dashboard PNG](AI-Driven-Healthcare-Ecosystem-Power-BI.jpg) | [Download PBIX](AI-Driven-Healthcare-Ecosystem-Power-BI.pbit).
 - **Source Code**: Available in this repository (`simulate_vitals.py`, `vitals-deployment.yaml`, etc.).
 
